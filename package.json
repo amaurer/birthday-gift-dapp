@@ -1,0 +1,37 @@
+{
+  "name": "birthday-gift",
+  "version": "0.1.0",
+  "description": "Birthday Gift Pool dApp using Truffle and Web3",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amaurer/birthday-gift-dapp.git"
+  },
+  "keywords": [
+    "Birthday",
+    "Gift",
+    "dApp",
+    "Ethereum",
+    "Contract",
+    "blockchain",
+    "truffle",
+    "web3"
+  ],
+  "author": "amaurer",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/amaurer/birthday-gift-dapp/issues"
+  },
+  "homepage": "https://github.com/amaurer/birthday-gift-dapp#readme"
+}
