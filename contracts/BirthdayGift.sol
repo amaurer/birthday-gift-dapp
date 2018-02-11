@@ -79,7 +79,7 @@ contract BirthdayGift {
         if ( isItTheirBirthday(msg.sender) ) {
             birthdayPool[msg.sender].balance = 0;
             giftAllBalance -= payout;
-            msg.sender.transfer(payout);
+            msg.sender.recieve(payout);
         } else {
             payout = 0;
         }
