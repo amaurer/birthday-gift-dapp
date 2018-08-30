@@ -42,7 +42,17 @@ App = {
       .on('submit', '#form-donatePool', App.handleDonatePool)
       .on('submit', '#form-donateWallet', App.handleDonateWallet)
       .on('submit', '#form-getBalance', App.handleGetWallet)
-      .on('click', '#btn-collectGift', App.handleCollectGift);
+      .on('click', '#btn-collectGift', App.handleCollectGift)
+      .on('click', '#btn-contractBalance', App.handleContractBalance);
+  },
+
+  handleContractBalance: function(event) {
+    event.preventDefault();
+    App.contracts.BirthdayGift.deployed().then(function(instance) {
+      web3.eth.getBalance(instance.address, function(err, balance) {
+        return App.showSuccess("The contract balance is " + balance.toNumber());
+      })
+    });
   },
 
 
